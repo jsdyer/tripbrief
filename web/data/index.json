@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T17:29:48Z",
-  "source_generated_at": "2026-11-25T17:20:16Z",
+  "checked_at": "2026-11-25T19:06:55Z",
+  "source_generated_at": "2026-11-25T19:00:17Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -48,7 +48,7 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-11-23T17:57:58Z",
+      "updated_at": "2026-11-25T18:35:03Z",
       "change_type": "Editorial change",
       "update": "Editorial change",
       "url": "https://travel.gc.ca/destinations/american-samoa"
@@ -912,9 +912,9 @@
       "level": 1,
       "regional": false,
       "advisory": "Exercise a high degree of caution",
-      "updated_at": "2026-10-13T20:13:03Z",
+      "updated_at": "2026-11-25T18:47:09Z",
       "change_type": "Regular text update",
-      "update": "Natural disasters and climate section – added information on El Niño",
+      "update": "Safety and security section – added information on general elections",
       "url": "https://travel.gc.ca/destinations/gambia-the"
     },
     {
@@ -2767,6 +2767,50 @@
     }
   ],
   "changes": [
+    {
+      "code": "AS",
+      "name": "American Samoa",
+      "detected_at": "2026-11-25T19:06:55Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-23T17:57:58Z",
+        "update": "Editorial change",
+        "change_type": "Editorial change"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-25T18:35:03Z",
+        "update": "Editorial change",
+        "change_type": "Editorial change"
+      }
+    },
+    {
+      "code": "GM",
+      "name": "Gambia, The",
+      "detected_at": "2026-11-25T19:06:55Z",
+      "kind": "updated",
+      "before": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-10-13T20:13:03Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-11-25T18:47:09Z",
+        "update": "Safety and security section – added information on general elections",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "CZ",
       "name": "Czechia",
