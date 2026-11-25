@@ -1,16 +1,40 @@
 {
-  "id": "coolcode-tool-template",
-  "title": "CoolCode Tool Starter",
-  "description": "A browser-only example that trims lines and removes exact duplicates.",
-  "category": "security",
-  "tags": ["text", "lines", "duplicates"],
-  "icon": "scan-search",
-  "url": "/coolcode-tool-template/",
-  "source": "https://github.com/jsdyer/coolcode-tool-template",
+  "id": "tripbrief",
+  "title": "Trip Brief",
+  "description": "Build a private itinerary with current Canadian travel advisories and export a dated travel brief.",
+  "category": "places",
+  "tags": [
+    "travel",
+    "Canada",
+    "advisories",
+    "itinerary",
+    "international",
+    "offline"
+  ],
+  "icon": "map",
+  "url": "/tripbrief/",
+  "source": "https://github.com/jsdyer/tripbrief",
   "hosting": "project",
   "access": "browser",
   "data_info": {
-    "mode": "local",
-    "detail": "The browser reads the text you paste and compares its lines."
+    "mode": "mixed",
+    "detail": "Global Affairs Canada advisory summaries are checked hourly. Your itinerary, notes and saved comparison stay on your device.",
+    "cadence": "Hourly",
+    "probes": [
+      {
+        "url": "https://coolcode.ca/tripbrief/data/status.json",
+        "path": [
+          "checked_at"
+        ],
+        "precision": "minute",
+        "label": "Official advisory index checked",
+        "count_at": {
+          "path": [
+            "count"
+          ],
+          "unit": "destinations"
+        }
+      }
+    ]
   }
 }

@@ -1,34 +1,32 @@
 <!doctype html>
 <html lang="en-CA">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="{{DESCRIPTION}}">
-  <title>{{TITLE}} · CoolCode</title>
-  <link rel="stylesheet" href="./style.css">
-  <script type="module" src="./app.mjs"></script>
-  {{VISIT_COUNTER}}
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="{{DESCRIPTION}}"><title>Canadian travel advisories for your itinerary · {{TITLE}}</title>
+<link rel="stylesheet" href="./style.css"><script type="module" src="./app.mjs"></script>{{VISIT_COUNTER}}
 </head>
 <body data-tool-id="{{TOOL_ID}}">
-  <a class="skip" href="#main">Skip to content</a>
-  <header><a href="https://coolcode.ca/">← CoolCode.ca</a><a href="{{SOURCE_URL}}">Source &amp; instructions ↗</a></header>
-  <main id="main">
-    <p class="eyebrow">Browser tool starter</p>
-    <h1>{{TITLE}}</h1>
-    <p class="intro">{{DESCRIPTION}}</p>
-    <section aria-labelledby="example-title">
-      <h2 id="example-title">Clean a list</h2>
-      <p>Trim spaces, skip blank lines and remove exact duplicates. Capitalization stays distinct.</p>
-      <div class="panels">
-        <div><label for="input">Your lines</label><textarea id="input" rows="10" maxlength="100000" spellcheck="false" placeholder="Paste one item per line"></textarea></div>
-        <div><label for="output">Cleaned lines</label><textarea id="output" rows="10" readonly spellcheck="false"></textarea></div>
-      </div>
-      <div class="actions"><button id="sample" type="button">Load example</button><button id="clear" type="button">Clear</button><button id="copy" type="button" hidden>Copy result</button></div>
-      <p id="status" role="status" aria-live="polite">Paste a list to begin.</p>
-      <noscript><p>This tool needs JavaScript to process your text. The source is available above.</p></noscript>
-    </section>
-    <aside aria-label="Privacy"><strong>Stays on your device.</strong> The browser processes your text in this tab. Reloading clears it.</aside>
-  </main>
-  <footer>Part of <a href="https://coolcode.ca/">the CoolCode collection</a>. {{ISSUE_LINK}}</footer>
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><a href="https://coolcode.ca/">← CoolCode</a><a href="{{SOURCE_URL}}">Source &amp; guide ↗</a></header>
+<main id="main">
+<section class="hero"><div><p class="eyebrow">PLAN WITH THE OFFICIAL PICTURE</p><h1>{{TITLE}}</h1><p class="intro">Your destinations. The latest Canadian travel advice. One brief you can take with you.</p></div><div class="hero-note"><strong>Private by default</strong><span>Trip notes stay in this tab.<br>Save to this device only when you choose.</span></div></section>
+<div class="source-strip"><span id="source-status" role="status">Loading the official advisory capture…</span><a href="https://travel.gc.ca/travelling/advisories" target="_blank" rel="noopener">Read official advice ↗</a></div>
+<p id="stale" class="warning" hidden></p>
+<nav class="tabs" aria-label="Workspace"><button id="tab-explore" aria-selected="true" aria-controls="explore">Explore destinations</button><button id="tab-trip" aria-selected="false" aria-controls="trip">My trip <span id="trip-count">0</span></button><button id="tab-changes" aria-selected="false" aria-controls="changes">Recent changes</button></nav>
+<section id="explore" class="workspace">
+<div class="filters"><label>Destination<input id="search" type="search" placeholder="Search country, territory or code" maxlength="100"></label><label>Advisory level<select id="level"><option value="">All levels</option><option value="0">Normal precautions</option><option value="1">High degree of caution</option><option value="2">Avoid non-essential travel</option><option value="3">Avoid all travel</option></select></label><label class="check"><input id="regional" type="checkbox"> With regional advisories</label></div>
+<div class="split"><div><p id="result-count" class="subtle"></p><div id="countries" class="countries" aria-label="Destination results"></div></div><article id="detail" class="detail"><p>Choose a destination to inspect its official summary and add it to your trip.</p></article></div>
+</section>
+<section id="trip" class="workspace" hidden>
+<div class="trip-heading"><div><h2>Your travel brief</h2><p>Choose dates and notes for each destination. Advice describes the current capture; it does not predict conditions on those dates.</p></div><button id="back-explore">Add destinations</button></div>
+<label>Trip name<input id="trip-title" maxlength="120" placeholder="My next trip"></label>
+<div class="actions"><button id="save" class="primary">Save on this device</button><button id="load">Load saved trip</button><button id="download-json">Export JSON</button><label class="button">Import JSON<input id="import" type="file" accept=".json,application/json" hidden></label><button id="download-brief">Download offline brief</button><button id="clear">Clear trip</button><button id="forget">Delete device save</button></div>
+<p id="trip-status" class="subtle" role="status"></p><div id="stops"></div>
+<aside class="explain"><strong>Read beyond the headline.</strong> Regional warnings can apply to only part of a country. This summary does not contain full health, entry, safety or local-law guidance. Check each official destination page before booking and departure.</aside>
+</section>
+<section id="changes" class="workspace" hidden><h2>Changes observed by Trip Brief</h2><p id="history-note"></p><div id="change-list"></div></section>
+<aside class="privacy"><strong>Your itinerary stays with you.</strong> This page downloads a public advisory snapshot. Search terms, dates and notes are processed locally. Exported files contain your notes; share them deliberately. The standard CoolCode counter records aggregate visits, not your itinerary.</aside>
+<noscript><p>JavaScript is needed for search and trip planning. Visit <a href="https://travel.gc.ca/travelling/advisories">Canada's official travel advisories</a>.</p></noscript>
+</main>
+<footer>Source: Global Affairs Canada • <a href="https://open.canada.ca/en/open-government-licence-canada">Open Government Licence–Canada</a> • {{ISSUE_LINK}}</footer>
+</body></html>

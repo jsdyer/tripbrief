@@ -1,0 +1,5 @@
+{
+  "url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
+  "minimum_records": 200,
+  "history_limit": 100
+}

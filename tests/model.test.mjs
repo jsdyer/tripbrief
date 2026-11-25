@@ -1,21 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { cleanLines } from '../web/model.mjs';
-test('trims, removes blanks and preserves first-seen order', () => {
-  assert.deepEqual(cleanLines('  Halifax\nLangley\nHalifax\n\nVancouver  '), {
-    text: 'Halifax\nLangley\nVancouver', count: 3, removed: 1,
-  });
-});
-test('supports Windows and old Mac line endings', () => {
-  assert.equal(cleanLines('a\r\nb\ra').text, 'a\nb');
-});
-test('empty text and whitespace produce an empty result', () => {
-  assert.deepEqual(cleanLines(' \n\t'), { text: '', count: 0, removed: 0 });
-});
-test('preserves case and Unicode', () => {
-  assert.equal(cleanLines('Québec\nquébec\n東京\nQuébec').text, 'Québec\nquébec\n東京');
-});
-test('treats markup as ordinary text', () => {
-  assert.equal(cleanLines('<script>alert(1)</script>\n<script>alert(1)</script>').text, '<script>alert(1)</script>');
-});
-test('rejects non-text input', () => { assert.throws(() => cleanLines(null), TypeError); });
+import {dateOnly,visibleCountries,validatePlan,parseImport,changedFields,offlineBrief} from '../web/model.mjs';
+const c={code:'US',name:'United States',name_fr:'États-Unis',level:0,regional:false,advisory:'Normal precautions',updated_at:'2026-11-24T12:00:00Z',change_type:'Update',update:'Check the source',url:'https://travel.gc.ca/destinations/united-states'};
+const plan=()=>({schema:1,title:'Travel',checked_at:'2026-11-25T00:00:00Z',stops:[{code:'US',start:'',end:'',notes:'',snapshot:{...c}}]});
+test('filters derive from arbitrary complete catalogue and French names',()=>{assert.equal(visibleCountries([c],{query:'états'}).length,1);assert.equal(visibleCountries([c],{level:'2'}).length,0);assert.equal(visibleCountries([{...c,code:'PT-20',regional:true}],{regional:true}).length,1);});
+test('calendar dates reject rollover and preserve leap days',()=>{assert(dateOnly('2028-02-29'));assert(!dateOnly('2027-02-29'));assert(!dateOnly('2026-13-01'));});
+test('date ranges must be complete and ordered',()=>{for(const dates of [['2026-12-10',''],['2026-12-10','2026-12-01']]){const p=plan();[p.stops[0].start,p.stops[0].end]=dates;assert.throws(()=>validatePlan(p));}});
+test('import remains atomic and rejects duplicate, oversized and hostile link evidence',()=>{assert.equal(parseImport(JSON.stringify(plan())).stops.length,1);const p=plan();p.stops.push({...p.stops[0]});assert.throws(()=>validatePlan(p));p.stops=[{...p.stops[0],snapshot:{...c,url:'javascript:alert(1)'}}];assert.throws(()=>validatePlan(p));assert.throws(()=>parseImport('x'.repeat(1000001)));});
+test('saved evidence remains unchanged when comparing current advice',()=>{const old={...c};assert.deepEqual(changedFields(old,{...c,level:2}),['Advisory level']);assert.equal(old.level,0);assert.equal(changedFields(old,null).length,1);});
+test('offline brief escapes user notes and retains source dates',()=>{const p=plan();p.title='<script>bad()</script>';p.stops[0].notes='<img src=x onerror=bad()>';const html=offlineBrief(p,'2026-11-25');assert(!html.includes('<script>'));assert(!html.includes('<img'));assert(html.includes('&lt;img'));assert(html.includes(c.updated_at));assert(html.includes('not live advice'));});
+test('more destinations than an initial example remain valid',()=>{const p=plan();p.stops.push({code:'PT-20',start:'2027-01-01',end:'2027-01-02',notes:'Azores',snapshot:{...c,code:'PT-20',name:'Azores'}});assert.equal(validatePlan(p).stops.length,2);});
+test('advisory update is meaningful even when risk is unchanged',()=>{assert.deepEqual(changedFields(c,{...c,update:'New consulate contact'}),['Update summary']);});

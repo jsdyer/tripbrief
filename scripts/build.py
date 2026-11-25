@@ -2,6 +2,7 @@
 """Build a browser tool using Python's standard library; no network required."""
 from html import escape
 import json
+import hashlib
 from pathlib import Path
 import re
 import shutil
@@ -9,6 +10,7 @@ import tempfile
 from urllib.parse import urlsplit
 
 from search_metadata import add_search_metadata
+from refresh import validate_public
 
 ROOT = Path(__file__).resolve().parents[1]
 SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
@@ -44,6 +46,11 @@ def metadata(root=ROOT):
 
 def build(root=ROOT):
     tool = metadata(root)
+    raw = (root / 'web/data/index.json').read_bytes()
+    capture = validate_public(json.loads(raw))
+    status = json.loads((root / 'web/data/status.json').read_text())
+    if status['sha256'] != hashlib.sha256(raw).hexdigest() or status['checked_at'] != capture['checked_at'] or status['count'] != len(capture['countries']):
+        raise ValueError('Source capture and status probe disagree')
     output = root / "dist"
     if output.is_symlink():
         raise ValueError("dist must not be a symlink")
