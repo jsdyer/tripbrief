@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T19:06:55Z",
-  "source_generated_at": "2026-11-25T19:00:17Z",
+  "checked_at": "2026-11-25T20:05:24Z",
+  "source_generated_at": "2026-11-25T19:20:17Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -12,9 +12,9 @@
       "level": 3,
       "regional": false,
       "advisory": "Avoid all travel",
-      "updated_at": "2026-10-14T11:01:50Z",
-      "change_type": "Regular text update",
-      "update": "Natural disasters and climate section – added information on El Niño",
+      "updated_at": "2026-11-25T19:19:24Z",
+      "change_type": "Editorial change",
+      "update": "Editorial change",
       "url": "https://travel.gc.ca/destinations/afghanistan"
     },
     {
@@ -2767,6 +2767,28 @@
     }
   ],
   "changes": [
+    {
+      "code": "AF",
+      "name": "Afghanistan",
+      "detected_at": "2026-11-25T20:05:24Z",
+      "kind": "updated",
+      "before": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-10-14T11:01:50Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-11-25T19:19:24Z",
+        "update": "Editorial change",
+        "change_type": "Editorial change"
+      }
+    },
     {
       "code": "AS",
       "name": "American Samoa",
