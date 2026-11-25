@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T14:10:33Z",
-  "source_generated_at": "2026-11-25T14:00:29Z",
+  "checked_at": "2026-11-25T15:10:22Z",
+  "source_generated_at": "2026-11-25T14:40:18Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -2340,9 +2340,9 @@
       "level": 3,
       "regional": false,
       "advisory": "Avoid all travel",
-      "updated_at": "2026-10-02T18:02:37Z",
+      "updated_at": "2026-11-25T14:39:16Z",
       "change_type": "Regular text update",
-      "update": "No change summary provided in the official index.",
+      "update": "Safety and security section – updated information on the political situation",
       "url": "https://travel.gc.ca/destinations/south-sudan"
     },
     {
@@ -2767,6 +2767,28 @@
     }
   ],
   "changes": [
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "detected_at": "2026-11-25T15:10:22Z",
+      "kind": "updated",
+      "before": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-10-02T18:02:37Z",
+        "update": "No change summary provided in the official index.",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-11-25T14:39:16Z",
+        "update": "Safety and security section – updated information on the political situation",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "GY",
       "name": "Guyana",
