@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T16:07:21Z",
-  "source_generated_at": "2026-11-25T15:21:58Z",
+  "checked_at": "2026-11-25T17:29:48Z",
+  "source_generated_at": "2026-11-25T17:20:16Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -648,9 +648,9 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-10-14T13:05:55Z",
-      "change_type": "Editorial change",
-      "update": "The Health section was updated - travel health information (Public Health Agency of Canada)",
+      "updated_at": "2026-11-25T16:39:02Z",
+      "change_type": "Regular text update",
+      "update": "Safety and security section – updated information on crime",
       "url": "https://travel.gc.ca/destinations/czechia"
     },
     {
@@ -864,9 +864,9 @@
       "level": 1,
       "regional": false,
       "advisory": "Exercise a high degree of caution",
-      "updated_at": "2026-11-25T15:18:42Z",
-      "change_type": "Editorial change",
-      "update": "Editorial change",
+      "updated_at": "2026-11-25T17:03:46Z",
+      "change_type": "Regular text update",
+      "update": "Need help? section – updated mission coordinates",
       "url": "https://travel.gc.ca/destinations/france"
     },
     {
@@ -1068,7 +1068,7 @@
       "level": 1,
       "regional": false,
       "advisory": "Exercise a high degree of caution",
-      "updated_at": "2026-11-25T13:48:17Z",
+      "updated_at": "2026-11-25T16:01:08Z",
       "change_type": "Regular text update",
       "update": "Need help? section – updated mission coordinates",
       "url": "https://travel.gc.ca/destinations/guyana"
@@ -2767,6 +2767,72 @@
     }
   ],
   "changes": [
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "detected_at": "2026-11-25T17:29:48Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-10-14T13:05:55Z",
+        "update": "The Health section was updated - travel health information (Public Health Agency of Canada)",
+        "change_type": "Editorial change"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-25T16:39:02Z",
+        "update": "Safety and security section – updated information on crime",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "detected_at": "2026-11-25T17:29:48Z",
+      "kind": "updated",
+      "before": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-11-25T15:18:42Z",
+        "update": "Editorial change",
+        "change_type": "Editorial change"
+      },
+      "after": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-11-25T17:03:46Z",
+        "update": "Need help? section – updated mission coordinates",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "GY",
+      "name": "Guyana",
+      "detected_at": "2026-11-25T17:29:48Z",
+      "kind": "updated",
+      "before": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-11-25T13:48:17Z",
+        "update": "Need help? section – updated mission coordinates",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-11-25T16:01:08Z",
+        "update": "Need help? section – updated mission coordinates",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "FR",
       "name": "France",
