@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T12:07:06Z",
-  "source_generated_at": "2026-11-24T21:00:16Z",
+  "checked_at": "2026-11-25T13:06:37Z",
+  "source_generated_at": "2026-11-25T13:01:18Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -156,7 +156,7 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-11-02T11:56:00Z",
+      "updated_at": "2026-11-25T12:47:43Z",
       "change_type": "Regular text update",
       "update": "Natural disasters and climate section – added information on El Niño",
       "url": "https://travel.gc.ca/destinations/australia"
@@ -2766,5 +2766,28 @@
       "url": "https://travel.gc.ca/destinations/zimbabwe"
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "code": "AU",
+      "name": "Australia",
+      "detected_at": "2026-11-25T13:06:37Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-02T11:56:00Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-25T12:47:43Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      }
+    }
+  ]
 }
