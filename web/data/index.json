@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-26T21:05:38Z",
-  "source_generated_at": "2026-11-26T20:00:24Z",
+  "checked_at": "2026-11-26T22:10:39Z",
+  "source_generated_at": "2026-11-26T21:40:18Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -1068,7 +1068,7 @@
       "level": 1,
       "regional": false,
       "advisory": "Exercise a high degree of caution",
-      "updated_at": "2026-11-26T13:05:22Z",
+      "updated_at": "2026-11-26T21:20:14Z",
       "change_type": "Regular text update",
       "update": "Need help? section – updated mission coordinates",
       "url": "https://travel.gc.ca/destinations/guyana"
@@ -2767,6 +2767,28 @@
     }
   ],
   "changes": [
+    {
+      "code": "GY",
+      "name": "Guyana",
+      "detected_at": "2026-11-26T22:10:39Z",
+      "kind": "updated",
+      "before": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-11-26T13:05:22Z",
+        "update": "Need help? section – updated mission coordinates",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 1,
+        "regional": false,
+        "advisory": "Exercise a high degree of caution",
+        "updated_at": "2026-11-26T21:20:14Z",
+        "update": "Need help? section – updated mission coordinates",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "BF",
       "name": "Burkina Faso",
