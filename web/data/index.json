@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-26T19:06:21Z",
-  "source_generated_at": "2026-11-26T16:40:16Z",
+  "checked_at": "2026-11-26T20:10:37Z",
+  "source_generated_at": "2026-11-26T20:00:24Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -420,7 +420,7 @@
       "level": 3,
       "regional": false,
       "advisory": "Avoid all travel",
-      "updated_at": "2026-10-14T12:49:23Z",
+      "updated_at": "2026-11-26T19:44:16Z",
       "change_type": "Regular text update",
       "update": "Natural disasters and climate section – added information on El Niño",
       "url": "https://travel.gc.ca/destinations/burkina-faso"
@@ -2767,6 +2767,28 @@
     }
   ],
   "changes": [
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "detected_at": "2026-11-26T20:10:37Z",
+      "kind": "updated",
+      "before": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-10-14T12:49:23Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-11-26T19:44:16Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "TT",
       "name": "Trinidad and Tobago",
