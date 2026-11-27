@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-27T20:11:17Z",
-  "source_generated_at": "2026-11-27T15:40:15Z",
+  "checked_at": "2026-11-27T21:11:12Z",
+  "source_generated_at": "2026-11-27T21:00:18Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -2244,9 +2244,9 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-11-20T17:30:28Z",
+      "updated_at": "2026-11-27T20:59:53Z",
       "change_type": "Regular text update",
-      "update": "Natural disasters and climate section – updated information on air pollution",
+      "update": "Editorial change",
       "url": "https://travel.gc.ca/destinations/singapore"
     },
     {
@@ -2652,9 +2652,9 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-11-23T19:47:01Z",
+      "updated_at": "2026-11-27T20:35:14Z",
       "change_type": "Regular text update",
-      "update": "Need help? section – updated the address and contact information for the Consulate General of Canada in Denver, United States",
+      "update": "Laws and culture section – added information on cashing and depositing Canadian cheques",
       "url": "https://travel.gc.ca/destinations/united-states"
     },
     {
@@ -2767,6 +2767,50 @@
     }
   ],
   "changes": [
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "detected_at": "2026-11-27T21:11:12Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-20T17:30:28Z",
+        "update": "Natural disasters and climate section – updated information on air pollution",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-27T20:59:53Z",
+        "update": "Editorial change",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "detected_at": "2026-11-27T21:11:12Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-23T19:47:01Z",
+        "update": "Need help? section – updated the address and contact information for the Consulate General of Canada in Denver, United States",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-27T20:35:14Z",
+        "update": "Laws and culture section – added information on cashing and depositing Canadian cheques",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "CD",
       "name": "Democratic Republic of Congo (Kinshasa)",
