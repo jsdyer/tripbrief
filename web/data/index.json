@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-27T15:07:11Z",
-  "source_generated_at": "2026-11-27T13:02:07Z",
+  "checked_at": "2026-11-27T16:15:06Z",
+  "source_generated_at": "2026-11-27T15:40:15Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -672,9 +672,9 @@
       "level": 3,
       "regional": false,
       "advisory": "Avoid all travel",
-      "updated_at": "2026-11-02T14:31:46Z",
-      "change_type": "Editorial change",
-      "update": "The Health section was updated - travel health information (Public Health Agency of Canada)",
+      "updated_at": "2026-11-27T15:03:34Z",
+      "change_type": "Regular text update",
+      "update": "Risk level section – extended end date of Canadian border measures related to Ebola for travellers from the Democratic Republic of the Congo",
       "url": "https://travel.gc.ca/destinations/congo-kinshasa"
     },
     {
@@ -792,9 +792,9 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-10-14T13:05:55Z",
-      "change_type": "Editorial change",
-      "update": "The Health section was updated - travel health information (Public Health Agency of Canada)",
+      "updated_at": "2026-11-27T15:08:41Z",
+      "change_type": "Regular text update",
+      "update": "Entry and exit requirements section – added information on border crossings with Russia, removed information on vehicles registered in Belarus or Russia",
       "url": "https://travel.gc.ca/destinations/estonia"
     },
     {
@@ -1272,9 +1272,9 @@
       "level": 1,
       "regional": true,
       "advisory": "Exercise a high degree of caution (with regional advisories)",
-      "updated_at": "2026-11-17T16:26:57Z",
-      "change_type": "Editorial change",
-      "update": "Editorial change",
+      "updated_at": "2026-11-27T15:14:21Z",
+      "change_type": "Regular text update",
+      "update": "Entry and exit requirements section – added information on the East African Tourist Visa",
       "url": "https://travel.gc.ca/destinations/kenya"
     },
     {
@@ -2052,7 +2052,7 @@
       "level": 0,
       "regional": true,
       "advisory": "Exercise normal security precautions (with regional advisories)",
-      "updated_at": "2026-11-20T15:43:21Z",
+      "updated_at": "2026-11-27T15:38:58Z",
       "change_type": "Editorial change",
       "update": "Editorial change",
       "url": "https://travel.gc.ca/destinations/rwanda"
@@ -2340,9 +2340,9 @@
       "level": 3,
       "regional": false,
       "advisory": "Avoid all travel",
-      "updated_at": "2026-11-25T14:39:16Z",
+      "updated_at": "2026-11-27T15:05:24Z",
       "change_type": "Regular text update",
-      "update": "Safety and security section – updated information on the political situation",
+      "update": "Risk level section – extended end date of Canadian border measures related to Ebola for travellers from South Sudan",
       "url": "https://travel.gc.ca/destinations/south-sudan"
     },
     {
@@ -2604,9 +2604,9 @@
       "level": 2,
       "regional": true,
       "advisory": "Avoid non-essential travel (with regional advisories)",
-      "updated_at": "2026-10-13T19:34:18Z",
+      "updated_at": "2026-11-27T15:10:35Z",
       "change_type": "Regular text update",
-      "update": "Natural disasters and climate section – added information on El Niño",
+      "update": "Risk level section – extended end date of Canadian border measures related to Ebola for travellers from Uganda; Entry and exit requirements section – added information on the East African Tourist Visa",
       "url": "https://travel.gc.ca/destinations/uganda"
     },
     {
@@ -2767,6 +2767,138 @@
     }
   ],
   "changes": [
+    {
+      "code": "CD",
+      "name": "Democratic Republic of Congo (Kinshasa)",
+      "detected_at": "2026-11-27T16:15:06Z",
+      "kind": "updated",
+      "before": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-11-02T14:31:46Z",
+        "update": "The Health section was updated - travel health information (Public Health Agency of Canada)",
+        "change_type": "Editorial change"
+      },
+      "after": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-11-27T15:03:34Z",
+        "update": "Risk level section – extended end date of Canadian border measures related to Ebola for travellers from the Democratic Republic of the Congo",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "detected_at": "2026-11-27T16:15:06Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-10-14T13:05:55Z",
+        "update": "The Health section was updated - travel health information (Public Health Agency of Canada)",
+        "change_type": "Editorial change"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-27T15:08:41Z",
+        "update": "Entry and exit requirements section – added information on border crossings with Russia, removed information on vehicles registered in Belarus or Russia",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "detected_at": "2026-11-27T16:15:06Z",
+      "kind": "updated",
+      "before": {
+        "level": 1,
+        "regional": true,
+        "advisory": "Exercise a high degree of caution (with regional advisories)",
+        "updated_at": "2026-11-17T16:26:57Z",
+        "update": "Editorial change",
+        "change_type": "Editorial change"
+      },
+      "after": {
+        "level": 1,
+        "regional": true,
+        "advisory": "Exercise a high degree of caution (with regional advisories)",
+        "updated_at": "2026-11-27T15:14:21Z",
+        "update": "Entry and exit requirements section – added information on the East African Tourist Visa",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "detected_at": "2026-11-27T16:15:06Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": true,
+        "advisory": "Exercise normal security precautions (with regional advisories)",
+        "updated_at": "2026-11-20T15:43:21Z",
+        "update": "Editorial change",
+        "change_type": "Editorial change"
+      },
+      "after": {
+        "level": 0,
+        "regional": true,
+        "advisory": "Exercise normal security precautions (with regional advisories)",
+        "updated_at": "2026-11-27T15:38:58Z",
+        "update": "Editorial change",
+        "change_type": "Editorial change"
+      }
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "detected_at": "2026-11-27T16:15:06Z",
+      "kind": "updated",
+      "before": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-11-25T14:39:16Z",
+        "update": "Safety and security section – updated information on the political situation",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 3,
+        "regional": false,
+        "advisory": "Avoid all travel",
+        "updated_at": "2026-11-27T15:05:24Z",
+        "update": "Risk level section – extended end date of Canadian border measures related to Ebola for travellers from South Sudan",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "detected_at": "2026-11-27T16:15:06Z",
+      "kind": "updated",
+      "before": {
+        "level": 2,
+        "regional": true,
+        "advisory": "Avoid non-essential travel (with regional advisories)",
+        "updated_at": "2026-10-13T19:34:18Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 2,
+        "regional": true,
+        "advisory": "Avoid non-essential travel (with regional advisories)",
+        "updated_at": "2026-11-27T15:10:35Z",
+        "update": "Risk level section – extended end date of Canadian border measures related to Ebola for travellers from Uganda; Entry and exit requirements section – added information on the East African Tourist Visa",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "AU",
       "name": "Australia",
