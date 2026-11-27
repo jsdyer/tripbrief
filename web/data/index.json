@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-27T12:55:57Z",
-  "source_generated_at": "2026-11-26T21:40:18Z",
+  "checked_at": "2026-11-27T14:13:04Z",
+  "source_generated_at": "2026-11-27T13:02:07Z",
   "source_url": "https://data.international.gc.ca/travel-voyage/index-alpha-eng.json",
   "baseline_at": "2026-11-25T05:34:48Z",
   "countries": [
@@ -156,7 +156,7 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-11-25T12:47:43Z",
+      "updated_at": "2026-11-27T12:43:57Z",
       "change_type": "Regular text update",
       "update": "Natural disasters and climate section – added information on El Niño",
       "url": "https://travel.gc.ca/destinations/australia"
@@ -2208,7 +2208,7 @@
       "level": 0,
       "regional": true,
       "advisory": "Exercise normal security precautions (with regional advisories)",
-      "updated_at": "2026-11-13T12:20:00Z",
+      "updated_at": "2026-11-27T12:47:00Z",
       "change_type": "Regular text update",
       "update": "Safety and security section – removed information on parliamentary elections",
       "url": "https://travel.gc.ca/destinations/serbia"
@@ -2328,7 +2328,7 @@
       "level": 0,
       "regional": false,
       "advisory": "Exercise normal security precautions",
-      "updated_at": "2026-11-24T17:38:04Z",
+      "updated_at": "2026-11-27T12:45:00Z",
       "change_type": "Regular text update",
       "update": "Entry and exit requirements section – updated information on exemption from the Korea Electronic Travel Authority (K-ETA)",
       "url": "https://travel.gc.ca/destinations/south-korea"
@@ -2767,6 +2767,72 @@
     }
   ],
   "changes": [
+    {
+      "code": "AU",
+      "name": "Australia",
+      "detected_at": "2026-11-27T14:13:04Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-25T12:47:43Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-27T12:43:57Z",
+        "update": "Natural disasters and climate section – added information on El Niño",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "detected_at": "2026-11-27T14:13:04Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-24T17:38:04Z",
+        "update": "Entry and exit requirements section – updated information on exemption from the Korea Electronic Travel Authority (K-ETA)",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 0,
+        "regional": false,
+        "advisory": "Exercise normal security precautions",
+        "updated_at": "2026-11-27T12:45:00Z",
+        "update": "Entry and exit requirements section – updated information on exemption from the Korea Electronic Travel Authority (K-ETA)",
+        "change_type": "Regular text update"
+      }
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "detected_at": "2026-11-27T14:13:04Z",
+      "kind": "updated",
+      "before": {
+        "level": 0,
+        "regional": true,
+        "advisory": "Exercise normal security precautions (with regional advisories)",
+        "updated_at": "2026-11-13T12:20:00Z",
+        "update": "Safety and security section – removed information on parliamentary elections",
+        "change_type": "Regular text update"
+      },
+      "after": {
+        "level": 0,
+        "regional": true,
+        "advisory": "Exercise normal security precautions (with regional advisories)",
+        "updated_at": "2026-11-27T12:47:00Z",
+        "update": "Safety and security section – removed information on parliamentary elections",
+        "change_type": "Regular text update"
+      }
+    },
     {
       "code": "GY",
       "name": "Guyana",
